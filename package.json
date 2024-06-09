@@ -1,0 +1,26 @@
+{
+  "name": "example-basic",
+  "type": "module",
+  "scripts": {
+    "build": "vinxi build",
+    "dev": "sst dev vinxi dev",
+    "start": "vinxi start",
+    "version": "vinxi version"
+  },
+  "dependencies": {
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.13.3",
+    "@solidjs/start": "^1.0.1",
+    "solid-js": "^1.8.17",
+    "sst": "ion",
+    "vinxi": "^0.3.11"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "pnpm": {
+    "overrides": {
+      "nitropack": "npm:nitropack-nightly@latest"
+    }
+  }
+}
