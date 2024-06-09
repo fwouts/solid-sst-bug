@@ -9,6 +9,7 @@ export default $config({
     };
   },
   async run() {
-    new sst.aws.SolidStart("MyWeb");
+    const db = new sst.aws.Postgres("MyDatabase");
+    new sst.aws.SolidStart("MyWeb", { link: [db] });
   },
 });
